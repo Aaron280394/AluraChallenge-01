@@ -1,0 +1,316 @@
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+*{
+    font-family: 'Kalam', cursive;
+}
+
+h1{
+    height: 50%;
+    padding: 30px;
+    text-align: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.tituloAnimado .bienvenida{
+    font-weight: bold;
+    color: #0A3870;
+    font-size: 35px;
+}
+
+body {
+    background-image: linear-gradient(135deg, #ff6961, #77dd77, #fdfd96, #84b6f4, #fdcae1);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+main {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    gap: 4em;
+    height: 90%;
+}
+
+.logoAlura{
+    width: 90px;
+    height: 40px;
+    margin: 20px 0 0 20px;
+}
+
+#sector-mensaje{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#mensaje{
+    box-sizing: border-box;
+    color: #0A3870;
+    background-color: rgb(242, 242, 220);
+    padding: 7px;
+    width: 85%;
+    height: 350px;
+    font-size: 30px;
+    margin:  5px 5px 10px 5px ;
+    vertical-align: top;
+    resize: none;
+    outline: none;
+    text-transform: lowercase;
+    border-radius: 0;
+    box-shadow: 5px 5px 25px rgb(128, 72, 72);
+    border-radius: 2rem
+}
+
+#mensaje::placeholder{
+    text-align: left;
+    color: #0A3870;
+}
+
+.advertencia{
+    display: flex;
+    margin: 3px;
+    color: #17191b;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+
+.contenedor-botones{
+    display: flex;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+button:hover:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, red, blue, deeppink,blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.boton-Encriptar{
+    background: #0A3870;
+    color: #F3F5FC;
+    width: 200px;
+    padding: 13px;
+    margin: 5px;
+    border-radius: 25px;
+    border: solid #0A3870;
+    border: 1px solid #0A3870;
+    font-size: 15px;
+    box-shadow: 5px 5px 30px 5px #000000;
+    cursor: pointer;
+}
+
+.boton-Desencriptar{
+    background: #0A3870;
+    color: #F3F5FC;
+    width: 200px;
+    padding: 13px;
+    margin: 5px;
+    border-radius: 25px;
+    border: solid #0A3870;
+    border: 1px solid #0A3870;
+    font-size: 15px;
+    box-shadow: 5px 5px 30px 5px #000000;
+    cursor: pointer;
+}
+
+#sector-rta{
+    width: 410px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3em;
+    background-color: rgb(242, 242, 220);
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px rgb(128, 72, 72);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#sin-rta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#muñeco{
+    margin: 0px 20px 0px 20px;
+    width: 250px;
+    height: 250px;
+}
+
+#sinMsj1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sinMsj2{
+    font-size: 12px;
+    text-align: center;
+    margin: 10px;
+}
+
+#texto-rta{
+    font-size: 30px;
+    color: #495057;
+    text-align: center;
+}
+
+.contenedor-copia{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.boton-Copiar{
+    background: #0A3870;
+    color: #F3F5FC;
+    width: 200px;
+    padding: 13px;
+    margin: 1em 1em 0;
+    border-radius: 25px;
+    border: solid #0A3870;
+    border: 1px solid #0A3870;
+    font-size: 15px;
+    box-shadow: 5px 5px 30px 5px #000000;
+    cursor: pointer;
+}
+
+.boton-Encriptar:hover,
+.boton-Desencriptar:hover,
+.boton-Copiar:hover{
+    color: white;
+    opacity: 0.9;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons-redes a {
+    text-decoration: none;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #0A3870;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+  
+.buttons-redes a:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 760px) {
+    .logoAlura {
+        width: auto;
+    }
+
+    .tituloAnimado .bienvenida{
+        font-weight: bold;
+        color: #0A3870;
+        font-size: 17px;
+    }
+
+    main{
+        width: auto;
+        flex-direction: column;
+    }
+
+    #sector-mensaje{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #muñeco{
+        display: none;
+    }
+
+    #sector-rta{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .boton-Copiar,
+    .boton-Encriptar,
+    .boton-Desencriptar{
+        padding: auto;
+        width: auto;
+    }
+
+    footer {
+        width: auto;
+    }
+}
+
+

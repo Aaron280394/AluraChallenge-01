@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura Challenge</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="imagenes/Logo.png" alt="alura" class="logoAlura">
+            <div class="tituloAnimado">
+            <span class="typed">
+            </span></div></h1>
+    </header>
+    <main>
+        <section id="sector-mensaje">
+            <textarea name="ingresa-mensaje" id="mensaje" placeholder="Ingrese su texto aquí..."></textarea>
+            <p class="advertencia">⭙ Solo letras minúsculas y sin tildes</p>
+            <div class="contenedor-botones">
+                <button class="boton-Encriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="boton-Desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </section>
+
+        
+        <section id="sector-rta">
+
+            <p id="texto-rta"></p>
+
+            <div id="sin-rta">
+                <img src="imagenes/Muñeco.png" alt="Muñeco" id="muñeco">
+                <p id="sinMsj1">Ningún mensaje fue encontrado</p>
+                <p id="sinMsj2">Ingrese el texto que desee encriptar o desencriptar</p>
+            </div>
+
+            <div class="contenedor-copia">
+                <button class="boton-Copiar" onclick="CopiarRta()">Copiar</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+            <div class="pie-pagina">
+                <img src="imagenes/footer.png" alt="pie de pagina">
+            </div>
+            <div class="buttons-redes">
+                <a href="https://github.com/Aaron280394" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/aaronespinozaarellano/" class="fa fa-linkedin"></a>
+            </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
